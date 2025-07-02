@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sss.css') }}">
+
+</head>
+<body>
+
+<h1> Header </h1>
+
+<main>
+    <h1>Hi there!</h1>
+    <p>Це Наша перша сторінка</p>
+
+</main>
+
+{% block main%}
+{% endblock main%}
+
+<h1>Footer </h1>
+
+</body>
+</html>
