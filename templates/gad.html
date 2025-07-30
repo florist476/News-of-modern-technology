@@ -1,11 +1,47 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <title>Гаджети</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block main %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Огляд сучасних гаджетів</h1>
+    <p class="lead text-center">Тут ви знайдете найсвіжіші новини та огляди про новітні гаджети, які змінюють наше життя.</p>
+
+    <!-- Секція карток -->
+    <div class="row mt-5">
+        <!-- Смартфони -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/_/a/_apple_iphone_16_pro_512gb_natural_titanium_1.jpg/w_1440" class="card-img-top" alt="Смартфон">
+                <div class="card-body">
+                    <h5 class="card-title">Смартфони</h5>
+                    <p class="card-text">Останні моделі з неймовірними камерами, швидкими процесорами та великим екраном.</p>
+                    <a href="/smartphone" class="btn btn-primary">Дізнатись більше</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ноутбуки -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336377_1280.jpg" class="card-img-top" alt="Ноутбук">
+                <div class="card-body">
+                    <h5 class="card-title">Ноутбуки</h5>
+                    <p class="card-text">Ультратонкі, потужні ноутбуки для роботи, навчання та розваг.</p>
+                    <a href="/laptops" class="btn btn-primary">Дізнатись більше</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Годинники -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://cdn.pixabay.com/photo/2017/09/15/22/05/smartwatch-2755932_1280.jpg" class="card-img-top" alt="Смарт-годинник">
+                <div class="card-body">
+                    <h5 class="card-title">Смарт-годинники</h5>
+                    <p class="card-text">Зручні гаджети для здоров’я та фітнесу, які завжди на вашій руці.</p>
+                    <a href="/smartwatch" class="btn btn-primary">Дізнатись більше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main %}

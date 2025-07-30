@@ -1,12 +1,45 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <title>Головна</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='sss.css') }}">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="text-center">
+    <h1 class="display-4">Вітаємо вас на сайті сучасних і технологічних новин</h1>
+    <p class="lead mt-3">Ось деякі основні теми для вас:</p>
+
+    <!-- Картки тем -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Інновації</h5>
+                    <p class="card-text">Дізнайтесь про останні досягнення у світі технологій.</p>
+                    <a href="/innovtion" class="btn btn-primary">Читати більше</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Гаджети</h5>
+                    <p class="card-text">Новинки смартфонів, ноутбуків та інших девайсів.</p>
+                    <a href="/gadgets" class="btn btn-primary">Читати більше</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Кібербезпека</h5>
+                    <p class="card-text">Захистіть себе у цифровому світі.</p>
+                    <a href="/cybersecurity" class="btn btn-primary">Читати більше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main %}
 
 
-</body>
-</html>
+
+
+
+

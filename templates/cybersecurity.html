@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container mt-5">
+    <!-- Заголовок -->
+    <h1 class="text-center mb-4">Кібербезпека</h1>
+    <p class="lead text-center mb-5">
+        Кібербезпека допомагає захищати наші дані та пристрої від атак і шахраїв у цифровому світі.
+    </p>
+
+    <!-- Ряд карток -->
+    <div class="row">
+        <!-- Захист даних -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://cdn.pixabay.com/photo/2017/08/10/03/47/data-2617221_1280.jpg" class="card-img-top" alt="Захист даних">
+                <div class="card-body">
+                    <h5 class="card-title">Захист персональних даних</h5>
+                    <p class="card-text">Технології шифрування та багатофакторна автентифікація для безпеки ваших облікових записів.</p>
+                    <a href="/cybersecurity" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Антивірусні системи -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/cyber-security-2015350_1280.jpg" class="card-img-top" alt="Антивірус">
+                <div class="card-body">
+                    <h5 class="card-title">Антивірусні програми</h5>
+                    <p class="card-text">Програмне забезпечення, що захищає комп’ютери та смартфони від вірусів і шкідливого ПЗ.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Фішинг -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://cdn.pixabay.com/photo/2018/07/11/16/31/identity-theft-3539289_1280.jpg" class="card-img-top" alt="Фішинг">
+                <div class="card-body">
+                    <h5 class="card-title">Фішинг та шахрайство</h5>
+                    <p class="card-text">Як розпізнавати підозрілі листи та сайти, щоб не стати жертвою шахраїв.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+{% endblock main %}

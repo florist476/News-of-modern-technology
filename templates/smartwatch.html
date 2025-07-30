@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container mt-5">
+    <!-- Заголовок -->
+    <h1 class="text-center mb-4">Сучасні смарт-годинники</h1>
+    <p class="lead text-center mb-5">
+        Смарт-годинники – це не просто аксесуари, а багатофункціональні гаджети для здоров’я, фітнесу та щоденних завдань.
+    </p>
+
+    <!-- Ряд карток -->
+    <div class="row">
+        <!-- Apple Watch -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://i.pinimg.com/736x/95/29/07/952907103266c242adf046514ced7772.jpg" class="card-img-top" alt="Apple Watch">
+                <div class="card-body">
+                    <h5 class="card-title">Apple Watch Series 10</h5>
+                    <p class="card-text">Ідеальний помічник для користувачів iPhone з функціями моніторингу здоров’я та фітнесу.</p>
+                    <a href="/smartwatch" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Samsung Galaxy Watch -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://i.pinimg.com/736x/4f/5b/06/4f5b069edf4944acdf0f7658bbc94c69.jpg" class="card-img-top" alt="Galaxy Watch">
+                <div class="card-body">
+                    <h5 class="card-title">Samsung Galaxy Watch 6</h5>
+                    <p class="card-text">Сумісність з Android, стильний дизайн та широкий набір функцій для фітнесу.</p>
+                    <a href="/smartwatch" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Garmin -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://i.pinimg.com/736x/d6/32/ec/d632ec0155574ceed055f24508475370.jpg" class="card-img-top" alt="Garmin">
+                <div class="card-body">
+                    <h5 class="card-title">Garmin Forerunner 955</h5>
+                    <p class="card-text">Ідеальний для спортсменів, з GPS та трекінгом активностей на професійному рівні.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fitbit -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://i.pinimg.com/1200x/1e/f3/0d/1ef30dda14a737e17f53858bb0c99590.jpg" class="card-img-top" alt="Fitbit">
+                <div class="card-body">
+                    <h5 class="card-title">Fitbit Versa 4</h5>
+                    <p class="card-text">Доступний варіант для моніторингу здоров’я, сну та фізичної активності.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main %}
